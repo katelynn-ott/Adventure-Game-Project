@@ -147,13 +147,13 @@ print(f"Power: {random_monster3['power']}")
 print(f"Money: {random_monster3['money']}")
 
 if __name__ == "__main__":
-    inventory = ['sword', 'shield']
+    inventory = ['bow', 'shield']
 
-add_item('potion', inventory)
-print("After adding potion:")
+add_item('spear', inventory)
+print("After adding spear:")
 display_inventory(inventory)
 
-remove_item('shield', inventory)
-print("After removing shield:")
+remove_item('bow', inventory)
+print("After removing bow:")
 display_inventory(inventory)
 
