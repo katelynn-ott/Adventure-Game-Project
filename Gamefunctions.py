@@ -5,6 +5,16 @@
 #This program defines purchase item and has three predetermined inputs to test.
 #This program also runs a randomized monster generator.
 #Documentation and Strings added to the top 
+"""
+This module contains basic game functions for managing player inventory 
+and interactions within the game.
+It includes functions to:
+- Add an item to the player's inventory.
+- Remove an item from the player's inventory.
+- Display the player's current inventory.
+
+These functions can be imported into other game modules for use.
+"""
 
 
 def print_welcome(name: str, width: int = 20):
@@ -135,3 +145,15 @@ print(f"Description: {random_monster3['description']}")
 print(f"Health: {random_monster3['health']}")
 print(f"Power: {random_monster3['power']}")
 print(f"Money: {random_monster3['money']}")
+
+if __name__ == "__main__":
+    inventory = ['sword', 'shield']
+
+add_item('potion', inventory)
+print("After adding potion:")
+display_inventory(inventory)
+
+remove_item('shield', inventory)
+print("After removing shield:")
+display_inventory(inventory)
+
