@@ -203,7 +203,7 @@ if __name__ == "__main__":
 
     random_monster = create_random_monster()
     print(f"Monster: {random_monster['name']} - {random_monsyer['description']}")
-    print(f"Health: {random_monster['health'], Power: {random_monster['power']}, Money: {random_monster['money']}")
+    print(f"Health: {random_monster['health']}, Power: {random_monster['power']}, Money: {random_monster['money']}")
                      
 
     inventory = ['bow', 'shield']
