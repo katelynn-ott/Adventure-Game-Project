@@ -19,7 +19,7 @@ Usage Example:
     import gamefunctions
 
     gamefunctions.print_welcome("PlayerName")
-    gamefucntions.print_shop_menu("Sword", 5.99, "Potion", 2.46)
+    gamefunctions.print_shop_menu("Sword", 5.99, "Potion", 2.46)
 """
 
 
@@ -92,7 +92,7 @@ def purchase_item(item_price: float, starting_money: float, quantity_purchase):
     Returns:
         tuple: the number of purchased items and remaining money
 
-    Example"
+    Example:
         purchase_item(3.5, 10, 3)
         (3, 0.5)
     """
@@ -198,15 +198,28 @@ if __name__ == "__main__":
 
     print_shop_menu("Sword", 10.99, "Potion", 2.49)
 
-    num_purchaed, leftover_money = purchase_item(3.5, 10, 3)
-    print(f"Purchased [num_purchased] items. Remaining money: ${leftover_money:.2f}")
+    num_purchased, leftover_money = purchase_item(3.5, 10, 3)
+    print(f"Purchased {num_purchased} items. Remaining money: ${leftover_money:.2f}")
 
     random_monster = create_random_monster()
-    print(f"Monster: {random_monster['name']} - {random_monsyer['description']}")
+    print(f"Monster: {random_monster['name']} - {random_monster['description']}")
     print(f"Health: {random_monster['health']}, Power: {random_monster['power']}, Money: {random_monster['money']}")
                      
 
-    inventory = ['bow', 'shield']
+inventory = ['bow', 'shield']
+def add_item(item: str, inventory: list):
+    Return None
+    
+    inventory.append(item)
+    
+def remove_item(item: str, inventory: list):
+    Return None
+    if item in inventory:
+        inventory.remove(item)
+def display_inventory(inventory:list):
+    Return None
+
+print(f"Inventory: {inventory}")
 
 add_item('spear', inventory)
 print("After adding spear:")
